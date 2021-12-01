@@ -1,0 +1,628 @@
+sub {
+  vertical-align: sub;
+  font-size: smaller;
+}
+.cover {
+  width: 100vw;
+  max-height: 100vh;
+  text-align: center;
+  color: white;
+}
+
+.img_cover {
+  width: 100vw;
+  height: 100vh;
+}
+.big_title {
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1em;
+}
+
+/* nav design */
+.header {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+#navbar {
+  overflow: hidden;
+  /* background-color: #333; */
+  background-image:linear-gradient(to right, #813681 , #0a6a7c);
+  z-index: 100;
+  width: 100vw;
+  align-items: center;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+}
+
+#navbar a {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1em;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-weight: bold;
+}
+
+#navbar a:hover {
+  /* background-color: #ddd;
+  color: black; */
+  background-color: white;
+  color: #813681;
+}
+
+#navbar a.active {
+  /* background-color: #04AA6D; */
+  color: white;
+  background-color: #0a6a7c;
+}
+
+.content {
+  padding: 16px;
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+h1, h2, p {
+  font-family: 'Merriweather Sans', sans-serif;
+}
+.title {
+  font-size: 1.5em;
+  font-stretch: extra-condensed;
+  margin-top: 10vh;
+  border-bottom: solid 3px #813681;
+}
+.sub_title, .title{
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.sub_title {
+  font-size: 1.2em;
+}
+.caption {
+  font-weight: bold;
+  font-size: 0.8em;
+}
+.tq_time_space {
+  margin-top: 5vh;
+  display: grid;
+  grid-template-columns: 0.7fr 1fr;
+  grid-template-rows: 0.3fr 1fr;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+/* .tq_2019 {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+} */
+.tq_text {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+  align-self: center;
+  /* margin-left: 10%;
+  margin-right: 10%; */
+  margin-bottom: 2%;
+  font-family: 'Merriweather', serif;
+  line-height: 180%;
+}
+.tq_2020 {
+  grid-column: 2 / 3;
+  grid-row: 1 / 3;
+}
+.tq_2020 {align-content: center;}
+.tq_extend {
+  display: grid;
+  grid-template-columns: 0.7fr 1fr;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+.tq_extend_text {
+  grid-column: 1/2;
+  align-self: center;
+  font-family: Merriweather;
+  line-height: 180%;
+}
+.tq_extend_bubble {
+  grid-column: 2/3;
+}
+.tq_dothi {
+  display: grid;
+  grid-template-columns: 1fr 0.5fr;
+  grid-template-rows: 0.3fr 1fr;
+  justify-content: center;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.slideshow_container_dothi {
+  grid-column: 1/2;
+  grid-row: 1/3;
+  justify-self: stretch;
+}
+/* .map_dothi {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+.graph_dothi {
+  grid-column: 2/3;
+  grid-row: 2/3;
+} */
+
+.tq_dothi_text {
+  grid-column: 2/3;
+  grid-row: 1/3;
+  align-self: center;
+  justify-self: end;
+  /* width: 70%; */
+  font-family: Merriweather;
+  margin-right: 2vw;
+  line-height: 180%;
+}
+
+.tqthai {
+  font-family: Merriweather sans;
+  margin-top: 10vh;
+  margin-bottom: 5vh;
+  font-size: 1.5em;
+}
+
+.tqthai_map, .tqthai_graph {
+  display: grid;
+  grid-template-columns: 0.7fr 1fr;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.tqthai_map_text, .tqthai_graph_text {
+  grid-column: 1/2;
+  align-self: center;
+}
+.tqthai_map_text p, .tqthai_graph_text p{
+  font-family: Merriweather;
+  line-height: 180%
+}
+.tqthai_map_viz, .tqthai_graph_viz {
+  grid-column: 2/3;
+}
+.italic {
+  font-style: italic;
+}
+
+.mien_bac, .mien_bac_tram, .mien_bac_ss {
+  display: grid;
+  grid-template-columns: 0.7fr 1fr;
+  grid-template-rows: 1fr;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  align-items: center;
+  margin-top: 30px;
+}
+#mien_bac_tram {
+  display: none;
+}
+.bac_text p, .bac_tram_text p, .bac_ss_text {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  font-family: Merriweather;
+  line-height: 180%;
+}
+.bac_map, .bac_dots, .bac_dots {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+button {
+  margin-top: 10px;
+}
+
+/* slideshow style */
+.slideshow_container_bac, .slideshow_container_trung, .slideshow_container_nam, .hanoi_dsq, .hochiminh_lsq, .tqthai_slideshow_container, .slideshow_container_hanoisk, .tq_slideshow_container  {
+  max-width: 1400px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlide_bac, .mySlide_trung, .mySlide_nam, .mySlide_dsq_HN, .mySlide_lsq_HCM,.mySlide_tq .mySlide_dothi, .mySlide_tqthai, .mySlide_hanoi_sk {
+  display: none;
+}
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color:#813681;
+  font-weight: bold;
+  font-size: 3em;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.dot {
+  cursor: pointer;
+  height: 25px;
+  width: 25px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+/* end slideshow */
+.sub_head {
+  text-align: center;
+  font-size: 2.5em;
+  margin-top: 5vh;
+  border-width: 5px;
+  border-style: solid;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  border-image:
+    linear-gradient(
+      to bottom,
+      rgba(10, 106, 124, 1),
+      rgba(129, 54, 129, 1)
+    ) 1 100%;
+}
+
+.instruction_cap {
+  font-style: italic;
+  font-size: 0.8em;
+}
+/* mien trung */
+.mien_trung, .mien_trung_tram, .mien_trung_ss {
+  display: grid;
+  grid-template-columns: 0.7fr 1fr;
+  grid-template-rows: 1fr;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+.trung_text, .trung_tram_text, .trung_ss_text {
+  grid-row: 1/2;
+  grid-column: 1/2;
+  align-self: center;
+  line-height: 180%;
+}
+.trung_text p, .trung_tram_text p, .trung_ss_text {
+  font-family: Merriweather;
+}
+.trung_map, .trung_tram_map, .trung_dots {
+  grid-row: 1/2;
+  grid-column: 2/3;
+}
+#mien_trung_tram {
+  display: none;
+}
+
+/* mien nam style */
+.mien_nam, .mien_nam_tram, .mien_nam_ss {
+  display: grid;
+  grid-template-columns: 0.7fr 1fr;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+
+.nam_text, .nam_tram_text, .nam_ss_text {
+  grid-column: 1/2;
+  align-self: center;
+  line-height: 180%;
+}
+
+.nam_text p, .nam_tram_text p, .nam_ss_text p{
+  font-family: Merriweather;
+}
+.nam_map, .nam_tram_map, .nam_dots {
+  grid-column: 2/3;
+}
+
+#mien_nam_tram {
+  display: none;
+}
+/* Hanoi style */
+.hanoi_head, .miennam_head, .mienbac_head, .mientrung_head {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+.hanoi_sub_head, .anh_hanoi, .nam_head, .bac_head, .trung_head {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  justify-self: center;
+}
+/* .anh_hanoi {
+  width: 20%;
+  opacity: 0.5;
+}
+.hanoi_sub_head {
+  z-index: 1;
+} */
+.hanoi_scene, .hanoi_mua, .hanoi_tram {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: 15vw;
+  margin-right: 15vw;
+}
+.hanoi_map, .hanoi_mua_line, .hanoi_tram_map {
+  grid-column: 2/3;
+}
+.hanoi_map, .hanoi_tram_map {
+  width: 85%;
+}
+.hanoi_mua_line {
+  width: 115%;
+}
+.hanoi_scene_text, .hanoi_mua_text, .hanoi_tram_text {
+  grid-column: 1/2;
+  font-family: Merriweather;
+  align-self: center;
+  line-height: 180%;
+}
+
+.hanoi_mua_sub {
+  margin-top: 5vw;
+}
+
+.hanoi_tram {
+  margin-top: 5vw;
+}
+
+.hanoi_dsq{
+  width: 80%;
+}
+
+.dsq_diachi, .dsq_nam, .dsq_thang, .dsq_ngay_AQI, .dsq_ngay_tuan, .dsq_gio {
+  display: grid;
+  grid-template-columns: 0.6fr 1fr;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+.dsq_diachi_text, .dsq_nam_text, .dsq_thang_text, .dsq_ngay_AQI_text, .dsq_ngay_tuan_text, .dsq_gio_text {
+  grid-column: 1/2;
+  align-self: center;
+  font-family: Merriweather;
+  line-height: 180%;
+}
+
+.dsq_diachi_map, .dsq_nam_line, .dsq_thang_line, .dsq_ngay_AQI_line, .dsq_ngay_tuan_line, .dsq_gio_line {
+  grid-column: 2/3;
+}
+
+.dsq_diachi_map {
+  width: 70%;
+  justify-self: center;
+}
+
+.hanoithai {
+  font-family: Merriweather sans;
+  font-size: 1.2em;
+  margin-top: 10vh;
+}
+
+.hanoi_thai {
+  margin-top: 10vh;
+  display: grid;
+  grid-template-columns: 0.7fr 1fr;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+
+.hanoi_thai_text {
+  grid-column: 1/2;
+  align-self: center;
+}
+.hanoi_thai_text p {
+  font-family: Merriweather;
+  line-height: 180%;
+}
+.hanoi_thai_viz {
+  grid-column: 2/3;
+}
+
+.hanoi_sk {
+  display: grid;
+  grid-template-columns: 0.7fr 1fr;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+.hanoi_sk_text{
+  grid-column: 1/2;
+  align-self: center;
+}
+.hanoi_sk_text p{
+  font-family: Merriweather;
+  line-height: 180%;
+}
+.hanoi_sk_viz{
+  grid-column: 2/3;
+  justify-content: center;
+}
+.hanoi_sk_intro {
+  margin-top: 10vh;
+}
+
+/* Thanh pho Ho chi minh style */
+.hochiminh_head {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  margin-top: 20px;
+}
+.hochiminh_sub_head, .anh_hochiminh {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  justify-self: center;
+}
+/* .anh_hochiminh {
+  width: 20%;
+  opacity: 0.7;
+}
+.hochiminh_sub_head {
+  z-index: 1;
+} */
+
+.hochiminh_scene, .hochiminh_tram, .hochiminh_mua {
+  display: grid;
+  grid-template-columns: 0.7fr 1fr;
+  margin-left: 15vw;
+  margin-right: 15vw;
+}
+.hochiminh_scene_text, .hochiminh_tram_text, .hochiminh_mua_text{
+  grid-column: 1/2;
+  font-family: Merriweather;
+  align-self: center;
+  line-height: 180%;
+}
+.hochiminh_map, .hochiminh_tram_map, .hochiminh_mua_line{
+  grid-column: 2/3;
+  align-self: center;
+}
+
+.hochiminh_map, .hochiminh_tram_map {
+  width: 80%;
+  justify-self: center;
+}
+.hochiminh_tram {
+  margin-top: 50px;
+}
+
+.hochiminh_lsq{
+  width: 80%;
+}
+.lsq_diachi, .lsq_nam, .lsq_thang, .lsq_ngay_AQI, .lsq_ngay_tuan, .lsq_gio {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+.lsq_diachi_text, .lsq_nam_text, .lsq_thang_text, .lsq_ngay_AQI_text, .lsq_ngay_tuan_text, .lsq_gio_text {
+  grid-column: 1/2;
+  font-family: Merriweather;
+  align-self: center;
+  line-height: 180%;
+}
+
+.lsq_diachi_map, .lsq_nam_line, .lsq_thang_line, .lsq_ngay_AQI_line, .lsq_ngay_tuan_line, .lsq_gio_line, .lsq_ngayAQI_pic{
+  grid-column: 2/3;
+}
+.lsq_diachi_map {
+  width: 70%;
+  justify-self: center;
+}
+/* Button style */
+/* adapt from https://codepen.io/chancesq/pen/xxVGbrw, access date: 23/7/2021 */
+.hcm_thai {
+  display: grid;
+  grid-template-columns: 0.8fr 1fr;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+.hcm_thai_text {
+  grid-column: 1/2;
+  padding-right: 5vw;
+}
+.hcm_thai_text p{
+  font-family: Merriweather;
+  line-height: 180%;
+}
+.hcm_thai_viz {
+  grid-column: 2/3;
+}
+.nguon_duong{
+  color: #1d6996;
+  font-style: italic;
+}
+.nguon_diem{
+  color: #f59324;
+  font-style: italic;
+}
+.nguon_dien{
+  color:#0f8554;
+  font-style: italic;
+}
+.hcmthai {
+  margin-top: 10vh;
+  margin-bottom: 5vh;
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+		-webkit-tap-highlight-color: transparent;
+}
+
+button {
+  font-family: Merriweather sans;
+	width: 350px;
+	height: 50px;
+	cursor: pointer;
+	font-size: 18px;
+	font-weight: bold;
+	color: black;
+	background: white;
+	border: 2px solid #0a6a7c;
+	box-shadow: 5px 5px 0 #813681,
+		-5px -5px 0 #813681,
+		-5px 5px 0 #813681,
+		5px -5px 0 #813681;
+	transition: 500ms ease-in-out;
+}
+
+button:hover {
+	box-shadow: 20px 5px 0 #813681, -20px -5px 0 #813681;
+}
+
+button:focus {
+	outline: none;
+}
